@@ -65,11 +65,13 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            /*-------------------------------------------------------------------------------
-//|LGUI/]|  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  |RGUI/[|
-//|CTRL/`|  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |CTRL/'|
-//|LALT/\|  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  |RALT/-|
-//                   | RSE | SPC | LWR |   | LWR | BKSP| RSE |
+            label = "DEF";
+            /*
+-------------------------------------------------------------------------------
+|LGUI/]|  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  |RGUI/[|
+|CTRL/`|  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |CTRL/'|
+|LALT/\|  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  |RALT/-|
+                   | RSE | SPC | LWR |   | LWR | BKSP| RSE |
 */
 
             bindings = <
@@ -81,11 +83,13 @@
         };
 
         lower_layer {
-            /*-------------------------------------------------------------------------------------
-//|LGUI/TRM| F1  | F2 | F3  | F4  | F5  |    | F6  | F7  | F8  | F9  | F10 | RGUI/F11 |
-//| CTRL   |  !  |  @ |  #  |  $  |  %  |    |  ^  |  &  |  *  |  (  |  )  | CTRL/F12 |
-//| LALT/= |  1  |  2 |  3  |  4  |  5  |    |  6  |  7  |  8  |  9  |  0  | RALT/-   |
-//                    | ADJ | ___ | ___ |    | ___ | ___ | ADJ |
+            label = "LWR";
+            /*
+-------------------------------------------------------------------------------------
+|LGUI/TRM| F1  | F2 | F3  | F4  | F5  |    | F6  | F7  | F8  | F9  | F10 | RGUI/F11 |
+| CTRL   |  !  |  @ |  #  |  $  |  %  |    |  ^  |  &  |  *  |  (  |  )  | CTRL/F12 |
+| LALT/= |  1  |  2 |  3  |  4  |  5  |    |  6  |  7  |  8  |  9  |  0  | RALT/-   |
+                    | ADJ | ___ | ___ |    | ___ | ___ | ADJ |
 */
 
             bindings = <
@@ -97,11 +101,13 @@
         };
 
         raise_layer {
-            /*----------------------------------------------------------------------------------------------
-//|LGUI/NUML|K *  |K 7 |K 8  |K 9  |K +  |            | CAPS | HOME | PSCR| PGUP | ___  | RGUI |
-//| CTRL/+  |K /  |K 4 |K 5  |K 6  |K -  |            | LEFT | DOWN | UP  | RGHT | INS  | CTRL |
-//| LALT/=  |K 0  |K 1 |K 4  |K 3  |K .  |            | SLCK | END  |PAUSE| PGDN | MENU | RALT |
-//                   | ___ | ___  | ADJ  |            | ADJ  | ___  | ___ |
+            label = "RSE";
+            /*
+----------------------------------------------------------------------------------------------
+|LGUI/NUML|K *  |K 7 |K 8  |K 9  |K +  |            | CAPS | HOME | PSCR| PGUP | ___  | RGUI |
+| CTRL/+  |K /  |K 4 |K 5  |K 6  |K -  |            | LEFT | DOWN | UP  | RGHT | INS  | CTRL |
+| LALT/=  |K 0  |K 1 |K 4  |K 3  |K .  |            | SLCK | END  |PAUSE| PGDN | MENU | RALT |
+                   | ___ | ___  | ADJ  |            | ADJ  | ___  | ___ |
 */
 
             bindings = <
@@ -113,11 +119,13 @@
         };
 
         adjust_layer {
-            /*------------------------------------------------------------------------------------------
-//| BLDR |OUT TG|     | STUD|     |     |   |        |        |       |        |        | RGUI |
-//| BTCLR| BT0  | BT1 | BT2 | BT3 | BT4 |   |        |MS LEFT | MS UP |MS RIGHT|MS WH UP| CTRL |
-//|pwrOFF|sftOFF|     |     |     |     |   |MIDL CLK|MS WH LT|MS DOWN|MS WH RT|MS WH DN| RALT |
-//                    | ___ | ___ | ___ |   |LEFT CLK|        | RIGHT CLK|
+            label = "ADJ";
+            /*
+----------------------------------------------------------------------------------------------
+| BLDR |OUT TG|     | STUD|     |     |   |        |        |       |        |        | RGUI |
+| BTCLR| BT0  | BT1 | BT2 | BT3 | BT4 |   |        |MS LEFT | MS UP |MS RIGHT|MS WH UP| CTRL |
+|pwrOFF|sftOFF|     |     |     |     |   |MIDL CLK|MS WH LT|MS DOWN|MS WH RT|MS WH DN| RALT |
+                    | ___ | ___ | ___ |   |LEFT CLK|        | RIGHT CLK|
 */
 
             bindings = <
